@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Recherche sur Wikipedia api</title>
+
+</head>
+
+<body class="blue-grey darken-4">
+    <nav class="indigo darken-3">
+        <div class="container">
+            <div class="nav-wrapper">
+                <i class="brand-logo fa-brands fa-wikipedia-w"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="row container center-align">
+        <div class="col s12">
+            <h3 class="white-text">Formulaire de Recherche sur Wikipedia</h3>
+            <form class="col s12" id="form">
+                <div class="row">
+                    <div class="input-field col s9">
+                        <i class="fa-solid fa-pencil prefix blue-text lighten-3"></i>
+                        <input id="icon_prefix" type="text" class="validate white-text">
+                        <label for="icon_prefix">Rechercher</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <button id="wikiBtn" class="btn waves-effect waves-light red darken-2 z-depth-5" type="submit"
+                            name="action">Rechercher
+                            <i class="fa fa-refresh right"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+    <div id="wikiResultat" class="container white-text col s12"></div>
+
+    <nav class="indigo darken-3 center-align white-text" style="position: fixed;
+    bottom: 0; margin-top: 20px;">
+        <p>
+            <i class="fa fa-copyright"></i> ADAMOU 2022
+        </p>
+    </nav>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
